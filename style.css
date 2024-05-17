@@ -14,6 +14,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     max-width: fit-content;
+    min-height: 316px;
 }
 
 .square {
@@ -21,8 +22,20 @@ body {
     height: 100px;
     background-color: aliceblue;
     border: 1px solid black;
-    align-items: center;
+    font-size: 48px;
+    line-height: 100px; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-size: 24px;
-    padding: 10px;
+    align-items: center; /* Add this line */
+    height: 100vh; /* Add this line to make the container take up the full height of the viewport */
+}
+
+.player-data {
+    margin-top: 20px;
 }
